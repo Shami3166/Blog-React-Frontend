@@ -134,11 +134,11 @@ function AboutSocials() {
 
 export default function About() {
   return (
-    <div className="relative min-h-screen flex items-center justify-center p-6 bg-gradient-to-br from-background via-muted/30 to-background">
+    <div className="relative min-h-screen flex items-center justify-center p-2 bg-gradient-to-br from-background via-muted/30 to-background">
       <div className="absolute inset-0 -z-10 opacity-10 bg-[radial-gradient(circle_at_top_left,rgba(0,0,0,0.3),transparent_70%)] dark:bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.2),transparent_70%)]" />
 
       <Card className="w-full max-w-4xl shadow-xl rounded-2xl border border-border/40">
-        <CardContent className="p-10 space-y-8">
+        <CardContent className="p-4 space-y-8">
           <AboutHeader />
           <Separator />
           <AboutContent />
