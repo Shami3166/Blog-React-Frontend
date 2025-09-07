@@ -40,7 +40,7 @@ export default function Contact() {
   }, [success, error, dispatch]);
 
   return (
-    <div className="flex justify-center px-4 py-10">
+    <div className="flex justify-center  py-10">
       <Card className="w-full max-w-2xl shadow-xl rounded-2xl">
         <CardHeader>
           <CardTitle className="text-3xl font-bold flex items-center gap-2">
