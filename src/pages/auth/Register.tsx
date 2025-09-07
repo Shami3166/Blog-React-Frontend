@@ -93,7 +93,7 @@ const Register = () => {
               )}
             </div>
           </CardContent>
-          <CardFooter className="flex flex-col gap-3">
+          <CardFooter className="flex flex-col mt-2 gap-3">
             <Button type="submit" className="w-full" disabled={loading}>
               {loading ? "Creating..." : "Register"}
             </Button>
