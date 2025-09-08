@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Terms() {
   return (
-    <div className="flex justify-center p-4 sm:p-8 bg-background dark:bg-muted/40">
+    <div className="flex justify-center p-1 sm:p-2 bg-background dark:bg-muted/40">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
@@ -26,7 +26,7 @@ export default function Terms() {
           </CardHeader>
 
           {/* Content */}
-          <CardContent className="mt-6 px-4">
+          <CardContent className="mt-6 px-2">
             <Tabs defaultValue="intro" className="w-full">
               {/* ✅ Make Tabs scrollable on mobile */}
               <div className="overflow-x-auto">

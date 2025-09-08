@@ -3,14 +3,14 @@ import { Separator } from "@/components/ui/separator";
 
 export default function Disclaimer() {
   return (
-    <div className="flex justify-center p-6 bg-gradient-to-br from-background to-muted/30">
+    <div className="flex justify-center p-1 bg-gradient-to-br from-background to-muted/30">
       <Card className="w-full py-5 max-w-4xl shadow-lg rounded-2xl border border-border/50">
         <CardHeader>
           <CardTitle className="text-4xl font-extrabold text-center bg-gradient-to-r from-primary to-purple-500 bg-clip-text text-transparent">
             Disclaimer
           </CardTitle>
         </CardHeader>
-        <CardContent className="space-y-8 text-muted-foreground">
+        <CardContent className="space-y-6 text-muted-foreground">
           <p className="text-lg leading-relaxed text-center">
             Welcome to{" "}
             <span className="font-semibold text-foreground">

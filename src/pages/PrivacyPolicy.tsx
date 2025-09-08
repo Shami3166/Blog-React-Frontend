@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 export default function Privacy() {
   return (
-    <div className="flex justify-center p-8 ">
+    <div className="flex justify-center p-2 ">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
