@@ -96,7 +96,7 @@ function AboutSocials() {
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: 0.4 }}
-      className="flex flex-col items-center gap-3"
+      className="flex flex-col mb-2 items-center gap-3"
     >
       <h2 className="text-xl font-semibold">🌍 Connect with Me</h2>
       <div className="flex gap-4">
@@ -137,7 +137,7 @@ export default function About() {
     <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-muted/30 to-background">
       <div className="absolute inset-0 -z-10 opacity-10 bg-[radial-gradient(circle_at_top_left,rgba(0,0,0,0.3),transparent_70%)] dark:bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.2),transparent_70%)]" />
 
-      <Card className="w-full max-w-4xl shadow-xl rounded-2xl border border-border/40">
+      <Card className="w-full max-w-4xl shadow-xl rounded-2xl py-5 border border-border/40">
         <CardContent className=" space-y-8">
           <AboutHeader />
           <Separator />

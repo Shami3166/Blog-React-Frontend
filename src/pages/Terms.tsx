@@ -12,7 +12,7 @@ export default function Terms() {
         transition={{ duration: 0.6 }}
         className="w-full max-w-5xl"
       >
-        <Card className="rounded-2xl border border-border shadow-xl bg-card">
+        <Card className="rounded-2xl border py-5 border-border shadow-xl bg-card">
           <CardHeader className="text-center space-y-2">
             <CardTitle className="text-4xl font-extrabold text-foreground">
               Terms & Conditions

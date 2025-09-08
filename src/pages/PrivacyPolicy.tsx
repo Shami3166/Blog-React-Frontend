@@ -17,9 +17,9 @@ export default function Privacy() {
         transition={{ duration: 0.6 }}
         className="w-full max-w-4xl"
       >
-        <Card className="rounded-3xl border border-primary/20 shadow-2xl bg-card/80 backdrop-blur-xl">
+        <Card className="rounded-3xl py-7 border border-primary/20 shadow-2xl bg-card/80 backdrop-blur-xl">
           <CardHeader className="text-center space-y-2">
-            <CardTitle className="text-4xl font-extrabold bg-gradient-to-r from-primary via-purple-500 to-pink-500 bg-clip-text text-transparent">
+            <CardTitle className="text-4xl p-2 font-extrabold bg-gradient-to-r from-primary via-purple-500 to-pink-500 bg-clip-text text-transparent">
               Privacy Policy
             </CardTitle>
             <p className="text-muted-foreground text-lg">

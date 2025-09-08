@@ -99,12 +99,12 @@ const Navbar = () => {
               <Button
                 variant="outline"
                 onClick={() => navigate("/login")}
-                className="flex items-center gap-1 text-gray-700 dark:text-gray-200"
+                className="flex cursor-pointer items-center gap-1 text-gray-700 dark:text-gray-200"
               >
                 <LogIn size={16} /> Login
               </Button>
               <Button
-                className="flex items-center gap-1"
+                className="flex cursor-pointer items-center gap-1"
                 onClick={() => navigate("/register")}
               >
                 <UserPlus size={16} /> Register
@@ -118,19 +118,19 @@ const Navbar = () => {
                     {user.name?.[0]?.toUpperCase() || "U"}
                   </AvatarFallback>
                 </Avatar>
-                <span className="text-gray-700 dark:text-gray-200 font-medium">
+                <span className="text-gray-700  dark:text-gray-200 font-medium">
                   {user.name}
                 </span>
               </div>
               <Button
-                className="flex items-center gap-1"
+                className="flex cursor-pointer items-center gap-1"
                 onClick={() => navigate("/profile")}
               >
                 <User size={16} /> Profile
               </Button>
               <Button
                 variant="destructive"
-                className="flex items-center gap-1"
+                className="flex cursor-pointer items-center gap-1"
                 onClick={onLogout}
               >
                 <LogOut size={16} /> Logout

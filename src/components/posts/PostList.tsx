@@ -95,7 +95,7 @@ const PostList = () => {
           <Button
             key={c.name}
             variant={filters.category === c.name ? "default" : "outline"}
-            className={`flex items-center gap-2 ${
+            className={`flex items-center cursor-pointer gap-2 ${
               filters.category === c.name
                 ? "bg-gradient-to-r from-blue-400 to-blue-500 text-white"
                 : ""

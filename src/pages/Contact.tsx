@@ -41,10 +41,10 @@ export default function Contact() {
 
   return (
     <div className="flex justify-center  py-10">
-      <Card className="w-full max-w-2xl shadow-xl rounded-2xl">
+      <Card className="w-full max-w-2xl py-5 shadow-xl rounded-2xl">
         <CardHeader>
           <CardTitle className="text-3xl font-bold flex items-center gap-2">
-            <MessageSquare className="w-7 h-7 text-primary" />
+            <MessageSquare className="w-7 h-7 mt-1 text-center text-primary" />
             Contact Us
           </CardTitle>
           <CardDescription>
@@ -57,7 +57,6 @@ export default function Contact() {
 
         <CardContent className="mt-6">
           <form onSubmit={handleSubmit} className="space-y-6">
-    
             <div className="space-y-2">
               <Label htmlFor="name">Your Name</Label>
               <Input
@@ -110,7 +109,7 @@ export default function Contact() {
               You can also reach us via email at{" "}
               <span className="font-medium">support@myblog.com</span>
             </p>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm mb-2 text-muted-foreground">
               We value your feedback and ideas. Your thoughts help make this
               blog better!
             </p>
