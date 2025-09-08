@@ -6,7 +6,6 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { toast } from "sonner";
 import {
   Menu,
-  X,
   Info,
   FileText,
   Phone,
@@ -147,7 +146,7 @@ const Navbar = () => {
           </SheetTrigger>
 
           <SheetContent side="right" className="w-64 flex flex-col">
-            <div className="flex justify-between items-center mb-6">
+            <div className="flex ml-2 justify-between items-center mb-6">
               <span className="text-xl font-bold text-indigo-600 dark:text-indigo-400">
                 Mobile & App Guides
               </span>
@@ -155,12 +154,10 @@ const Navbar = () => {
                 variant="ghost"
                 onClick={() => setMobileMenuOpen(false)}
                 className="p-0"
-              >
-                <X size={24} />
-              </Button>
+              ></Button>
             </div>
 
-            <nav className="flex flex-col gap-4 mb-6">
+            <nav className="flex ml-2 flex-col gap-4 mb-6">
               {navLinks.map((link) => (
                 <NavLink
                   key={link.name}
@@ -188,7 +185,7 @@ const Navbar = () => {
               )}
             </nav>
 
-            <div className="flex flex-col gap-3 mt-auto">
+            <div className="flex ml-2 flex-col gap-3 mt-auto">
               <ModeToggle />
               {!user ? (
                 <>
