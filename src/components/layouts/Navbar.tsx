@@ -145,7 +145,7 @@ const Navbar = () => {
             </Button>
           </SheetTrigger>
 
-          <SheetContent side="right" className="w-64 flex flex-col">
+          <SheetContent side="left" className="w-64 flex flex-col">
             <div className="flex ml-2 justify-between items-center mb-6">
               <span className="text-xl font-bold text-indigo-600 dark:text-indigo-400">
                 Mobile & App Guides

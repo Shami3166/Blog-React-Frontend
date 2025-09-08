@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Terms() {
   return (
-    <div className="flex justify-center p-8 bg-background dark:bg-muted/40">
+    <div className="flex justify-center p-4 sm:p-8 bg-background dark:bg-muted/40">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
@@ -13,33 +13,45 @@ export default function Terms() {
         className="w-full max-w-5xl"
       >
         <Card className="rounded-2xl border py-5 border-border shadow-xl bg-card">
-          <CardHeader className="text-center space-y-2">
-            <CardTitle className="text-4xl font-extrabold text-foreground">
+          {/* Header */}
+          <CardHeader className="text-center space-y-2 px-4">
+            <CardTitle className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground">
               Terms & Conditions
             </CardTitle>
-            <p className="text-muted-foreground text-lg">
+            <p className="text-muted-foreground text-sm sm:text-base md:text-lg">
               Please read these Terms carefully before using{" "}
               <span className="font-semibold">Ehtesham Munawar’s Blog</span>. By
               accessing our website, you agree to comply with them.
             </p>
           </CardHeader>
 
-          <CardContent className="mt-6">
+          {/* Content */}
+          <CardContent className="mt-6 px-4">
             <Tabs defaultValue="intro" className="w-full">
-              <TabsList className="grid w-full grid-cols-4 bg-muted rounded-lg p-1 mb-6">
-                <TabsTrigger value="intro">Introduction</TabsTrigger>
-                <TabsTrigger value="use">Use of Website</TabsTrigger>
-                <TabsTrigger value="content">Content Ownership</TabsTrigger>
-                <TabsTrigger value="liability">
-                  Limitation of Liability
-                </TabsTrigger>
-              </TabsList>
+              {/* ✅ Make Tabs scrollable on mobile */}
+              <div className="overflow-x-auto">
+                <TabsList className="flex sm:grid sm:grid-cols-4 w-max sm:w-full bg-muted rounded-lg p-1 mb-6 space-x-2 sm:space-x-0">
+                  <TabsTrigger value="intro" className="whitespace-nowrap">
+                    Introduction
+                  </TabsTrigger>
+                  <TabsTrigger value="use" className="whitespace-nowrap">
+                    Use of Website
+                  </TabsTrigger>
+                  <TabsTrigger value="content" className="whitespace-nowrap">
+                    Content Ownership
+                  </TabsTrigger>
+                  <TabsTrigger value="liability" className="whitespace-nowrap">
+                    Limitation of Liability
+                  </TabsTrigger>
+                </TabsList>
+              </div>
 
+              {/* Tabs Content */}
               <TabsContent
                 value="intro"
                 className="text-muted-foreground space-y-3"
               >
-                <h2 className="text-2xl font-semibold text-foreground">
+                <h2 className="text-xl sm:text-2xl font-semibold text-foreground">
                   1. Introduction
                 </h2>
                 <p>
@@ -64,7 +76,7 @@ export default function Terms() {
                 value="use"
                 className="text-muted-foreground space-y-3"
               >
-                <h2 className="text-2xl font-semibold text-foreground">
+                <h2 className="text-xl sm:text-2xl font-semibold text-foreground">
                   2. Use of Website
                 </h2>
                 <p>
@@ -88,7 +100,7 @@ export default function Terms() {
                 value="content"
                 className="text-muted-foreground space-y-3"
               >
-                <h2 className="text-2xl font-semibold text-foreground">
+                <h2 className="text-xl sm:text-2xl font-semibold text-foreground">
                   3. Content Ownership
                 </h2>
                 <p>
@@ -111,7 +123,7 @@ export default function Terms() {
                 value="liability"
                 className="text-muted-foreground space-y-3"
               >
-                <h2 className="text-2xl font-semibold text-foreground">
+                <h2 className="text-xl sm:text-2xl font-semibold text-foreground">
                   4. Limitation of Liability
                 </h2>
                 <p>
@@ -134,7 +146,8 @@ export default function Terms() {
               </TabsContent>
             </Tabs>
 
-            <p className="text-center mt-8 text-sm text-muted-foreground italic">
+            {/* Footer */}
+            <p className="text-center mt-8 text-xs sm:text-sm text-muted-foreground italic">
               Last updated: January 1, 2025
               <br /> For questions about these terms, please contact us via the{" "}
               <span className="font-semibold text-foreground">
